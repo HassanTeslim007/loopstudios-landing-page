@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /* border: 1px solid red; */
+  height: 80vh;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  /* border: 1px solid red; */
+  height: 400vh;
+}
+
+.section1 {
+  /* border: 1px solid black; */
+  height: 90vh;
+  margin-left: 3em;
+  margin-right: 3em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.section1 .image {
+  /* border: 1px solid black; */
+  height: 30%;
+  background-image: url("images/desktop/image-interactive.jpg");
+  background-size: cover;
+}
+
+.section1 .text {
+  /* border: 1px solid red; */
+  height: 60%;
+  padding: 1.6em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.section1 .text h1 {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.section1 .text p {
+  font-family: "Alata", sans-serif;
+  color: rgba(0, 0, 0, 0.492);
+}
+
+.section2 {
+  /* border: 1px solid blue; */
+  height: 190vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+.group {
+  height: 50%;
+  /* background-color: red; */
+}
+
+.section2-heading {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.see-all-heading{
+    display: none;
+}
+
+.creations {
+  /* border: 1px solid black; */
+  height: 82%;
+}
+
+.creation {
+  /* border: 1px solid blue; */
+  height: 22%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 1em;
+  color: white;
+  padding-left: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 2em;
+  font-weight: 100;
+}
+
+.creation h2 {
+  opacity: 1;
+}
+
+.deep {
+  background-image: url("images/mobile/image-deep-earth.jpg");
+  box-shadow: inset 0 0 0 2000px rgba(7, 0, 3, 0.3);
+}
+
+.arcade {
+  background-image: url("images/mobile/image-night-arcade.jpg");
+}
+
+.fish {
+  background-image: url("images/mobile/image-fisheye.jpg");
+}
+
+.pocket {
+  background-image: url("images/mobile/image-pocket-borealis.jpg");
+}
+
+.grid {
+  background-image: url("images/mobile/image-grid.jpg");
+}
+
+.soccer {
+  background-image: url("images/mobile/image-soccer-team.jpg");
+}
+
+.above {
+  background-image: url("images/mobile/image-from-above.jpg");
+}
+
+.curiosity {
+  background-image: url("images/mobile/image-curiosity.jpg");
+}
+
+.see-all {
+  width: 50%;
+  height: 60px;
+  margin: 0 auto;
+  background-color: white;
+  margin-top: 1em;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+footer{
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;color: white;
+}
+@media (min-width: 850px) {
+  .section1 .image {
+    position: relative;
+    top: 10%;
+    height: 90%;
+    width: 60%;
+  }
+
+  .section1 .text {
+    position: relative;
+    left: 55%;
+    bottom: 27%;
+    width: 45%;
+    height: 50%;
+    background-color: white;
+  }
+
+  .section2 {
+    height: 150vh;
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  .section2-heading{
+    float: left;
+  }
+
+  .deep {
+    background-image: url("images/desktop/image-deep-earth.jpg");
+  }
+  
+  .arcade {
+    background-image: url("images/desktop/image-night-arcade.jpg");
+  }
+  
+  .fish {
+    background-image: url("images/desktop/image-fisheye.jpg");
+  }
+  
+  .pocket {
+    background-image: url("images/desktop/image-pocket-borealis.jpg");
+  }
+  
+  .grid {
+    background-image: url("images/desktop/image-grid.jpg");
+  }
+  
+  .soccer {
+    background-image: url("images/desktop/image-soccer-team.jpg");
+  }
+  
+  .above {
+    background-image: url("images/desktop/image-from-above.jpg");
+  }
+  
+  .curiosity {
+    background-image: url("images/desktop/image-curiosity.jpg");
+  }
+
+  .see-all{
+    display: none;
+  }
+  .see-all-heading {
+    display: block;
+    float: right;
+    width: 15%;
+    height: 40px;
+    margin-top: 0;
+  }
+
+   .group {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .creation {
+    height: 90%;
+    width: 22%;
+    background-size: cover;
+  }
+
+  .creation:hover{
+    color: #000000;
+    font-weight: bolder;
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.735);
+  }
+
+  footer{
+    height: 25vh;
+  }
+}
